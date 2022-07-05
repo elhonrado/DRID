@@ -1,9 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - EndTrigger
     - PlayerScript
+    - Score
     - credits
     - follow
+    - manager
     - movement
     - start
     Unity.Rider.Editor.dll:
@@ -18,10 +21,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -57,25 +58,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 4554}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 5160}
     - Class: 114
-      Script: {instanceID: 5874}
+      Script: {instanceID: 5732}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 5882}
     - Class: 114
-      Script: {instanceID: 42588}
+      Script: {instanceID: 6206}
     - Class: 114
-      Script: {instanceID: 48226}
+      Script: {instanceID: 24824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -115,21 +116,49 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 6646}
+      Script: {instanceID: 2832}
+    - Class: 114
+      Script: {instanceID: 3164}
+    - Class: 114
+      Script: {instanceID: 3532}
+    - Class: 114
+      Script: {instanceID: 4206}
+    - Class: 114
+      Script: {instanceID: 4960}
+    - Class: 114
+      Script: {instanceID: 5014}
+    - Class: 114
+      Script: {instanceID: 5160}
+    - Class: 114
+      Script: {instanceID: 5732}
+    - Class: 114
+      Script: {instanceID: 5882}
+    - Class: 114
+      Script: {instanceID: 6206}
+    - Class: 114
+      Script: {instanceID: 6654}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 134
       Script: {instanceID: 0}
@@ -138,6 +167,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/welcome.unity:
     - Class: 1
@@ -163,31 +200,31 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1542}
+      Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2182}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 2832}
     - Class: 114
-      Script: {instanceID: 3110}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 4048}
+      Script: {instanceID: 4050}
     - Class: 114
-      Script: {instanceID: 4160}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4424}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5160}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 5360}
     - Class: 114
-      Script: {instanceID: 5874}
+      Script: {instanceID: 5732}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 5882}
     - Class: 114
-      Script: {instanceID: 46450}
+      Script: {instanceID: 6206}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -711,6 +748,12 @@ ScriptsOnlyBuild:
     className: TextConsoleSimulator
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: credits
+  - hash:
+      serializedVersion: 2
       Hash: 11319334e5365797f8056694f9b5dae4
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -783,6 +826,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: 7b6cfd648355993375d6582ec618cb7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 62fef86270a167c41a606cfca1ecc156
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -853,6 +902,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: start
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1213,27 +1268,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 7b6cfd648355993375d6582ec618cb7e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EndTrigger
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: start
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: credits
   platform: 5
   scenePathNames:
   - Assets/welcome.unity
   - Assets/ending level.unity
   - Assets/credit scene 1.unity
-  playerPath: C:/Users/varun/Desktop/unity/New Unity Project/build/windows/x86/Sphero.exe
+  playerPath: C:/Users/varun/Desktop/builds/Sphero/Sphero.exe

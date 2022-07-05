@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour
     //control begins here
     void FixedUpdate()
     {
-        rb.useGravity = true; //activate gravity
+        rb.useGravity = false;
         if (Input.GetKey("w"))
         {
             rb.AddForce(0,0,ForwardForce * Time.deltaTime);
